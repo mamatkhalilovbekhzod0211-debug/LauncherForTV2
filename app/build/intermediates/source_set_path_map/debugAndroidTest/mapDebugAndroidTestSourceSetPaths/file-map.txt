@@ -1,0 +1,7 @@
+uz.bekhzod0211.launcherfortv.test.app-annotation-experimental-1.4.0-0 C:\Users\User\.gradle\caches\8.13\transforms\33a2d9f33af10439ea056aeea2fe22f3\transformed\annotation-experimental-1.4.0\res
+uz.bekhzod0211.launcherfortv.test.app-core-1.5.0-1 C:\Users\User\.gradle\caches\8.13\transforms\e9e1612c1fd4adb52d87d8792b935f8b\transformed\core-1.5.0\res
+uz.bekhzod0211.launcherfortv.test.app-androidTest-2 D:\ASProjects\LauncherForTV\app\build\generated\res\resValues\androidTest\debug
+uz.bekhzod0211.launcherfortv.test.app-updated_navigation_xml-3 D:\ASProjects\LauncherForTV\app\build\generated\updated_navigation_xml\debugAndroidTest
+uz.bekhzod0211.launcherfortv.test.app-mergeDebugAndroidTestResources-4 D:\ASProjects\LauncherForTV\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+uz.bekhzod0211.launcherfortv.test.app-mergeDebugAndroidTestResources-5 D:\ASProjects\LauncherForTV\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+uz.bekhzod0211.launcherfortv.test.app-debugAndroidTest-6 D:\ASProjects\LauncherForTV\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

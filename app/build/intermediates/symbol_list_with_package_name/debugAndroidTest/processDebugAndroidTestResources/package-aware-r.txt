@@ -1,0 +1,3 @@
+uz.bekhzod0211.launcherfortv.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

@@ -1,0 +1,167 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="uz.bekhzod0211.launcherfortv"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-feature
+11-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:6:5-8:36
+12        android:name="android.software.leanback"
+12-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:7:9-49
+13        android:required="false" />
+13-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:8:9-33
+14    <uses-feature
+14-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:10:5-12:36
+15        android:name="android.hardware.touchscreen"
+15-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:11:9-52
+16        android:required="false" />
+16-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:12:9-33
+17    <uses-feature
+17-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:14:5-16:36
+18        android:name="android.hardware.telephony"
+18-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:15:9-50
+19        android:required="false" />
+19-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:16:9-33
+20
+21    <permission
+21-->[androidx.core:core:1.13.0] C:\Users\User\.gradle\caches\8.13\transforms\68f05661693a464d29d69fa67d56dd2c\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+22        android:name="uz.bekhzod0211.launcherfortv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.13.0] C:\Users\User\.gradle\caches\8.13\transforms\68f05661693a464d29d69fa67d56dd2c\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.13.0] C:\Users\User\.gradle\caches\8.13\transforms\68f05661693a464d29d69fa67d56dd2c\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="uz.bekhzod0211.launcherfortv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.13.0] C:\Users\User\.gradle\caches\8.13\transforms\68f05661693a464d29d69fa67d56dd2c\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.13.0] C:\Users\User\.gradle\caches\8.13\transforms\68f05661693a464d29d69fa67d56dd2c\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+26
+27    <application
+27-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:17:5-46:19
+28        android:allowBackup="true"
+28-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:18:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.13.0] C:\Users\User\.gradle\caches\8.13\transforms\68f05661693a464d29d69fa67d56dd2c\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+30        android:dataExtractionRules="@xml/data_extraction_rules"
+30-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:19:9-65
+31        android:debuggable="true"
+32        android:extractNativeLibs="true"
+33        android:fullBackupContent="@xml/backup_rules"
+33-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:20:9-54
+34        android:icon="@mipmap/ic_launcher"
+34-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:21:9-43
+35        android:label="@string/app_name"
+35-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:22:9-41
+36        android:roundIcon="@mipmap/ic_launcher_round"
+36-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:23:9-54
+37        android:supportsRtl="true"
+37-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:24:9-35
+38        android:testOnly="true"
+39        android:theme="@style/Theme.LauncherForTV" >
+39-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:25:9-51
+40        <activity
+40-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:26:9-45:20
+41            android:name="uz.bekhzod0211.launcherfortv.MainActivity"
+41-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:27:13-41
+42            android:exported="true" >
+42-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:28:13-36
+43            <intent-filter>
+43-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:29:13-44:29
+44
+45                <!-- Объявляем точку входа -->
+46                <action android:name="android.intent.action.MAIN" />
+46-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:31:17-69
+46-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:31:25-66
+47
+48                <!-- Категория домашнего экрана -->
+49                <category android:name="android.intent.category.HOME" />
+49-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:34:17-73
+49-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:34:27-70
+50
+51                <!-- Обозначаем как стандартный лаунчер -->
+52                <category android:name="android.intent.category.DEFAULT" />
+52-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:37:17-76
+52-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:37:27-73
+53
+54                <!-- Делает доступным из списка лаунчеров -->
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:40:17-77
+55-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:40:27-74
+56
+57                <!-- Для Android TV (Leanback поддержка) -->
+58                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+58-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:43:17-86
+58-->D:\ASProjects\LauncherForTV\app\src\main\AndroidManifest.xml:43:27-83
+59            </intent-filter>
+60        </activity>
+61
+62        <provider
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\8.13\transforms\44a8f84e071faf2935f03e6b01b4de5e\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+63            android:name="androidx.startup.InitializationProvider"
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\8.13\transforms\44a8f84e071faf2935f03e6b01b4de5e\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+64            android:authorities="uz.bekhzod0211.launcherfortv.androidx-startup"
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\8.13\transforms\44a8f84e071faf2935f03e6b01b4de5e\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+65            android:exported="false" >
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\8.13\transforms\44a8f84e071faf2935f03e6b01b4de5e\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+66            <meta-data
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\8.13\transforms\44a8f84e071faf2935f03e6b01b4de5e\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\8.13\transforms\44a8f84e071faf2935f03e6b01b4de5e\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+68                android:value="androidx.startup" />
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\8.13\transforms\44a8f84e071faf2935f03e6b01b4de5e\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+69            <meta-data
+69-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\User\.gradle\caches\8.13\transforms\ec063efd7dcf5592e08c907a96a247c3\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+70-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\User\.gradle\caches\8.13\transforms\ec063efd7dcf5592e08c907a96a247c3\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+71                android:value="androidx.startup" />
+71-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\User\.gradle\caches\8.13\transforms\ec063efd7dcf5592e08c907a96a247c3\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+72            <meta-data
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+73                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+74                android:value="androidx.startup" />
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+75        </provider>
+76
+77        <receiver
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+78            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+79            android:directBootAware="false"
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+80            android:enabled="true"
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+81            android:exported="true"
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+82            android:permission="android.permission.DUMP" >
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+83            <intent-filter>
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+84                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+85            </intent-filter>
+86            <intent-filter>
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+87                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+88            </intent-filter>
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+90                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+91            </intent-filter>
+92            <intent-filter>
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+93                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\8.13\transforms\cc68da338b49c430d5f733e788ec8309\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+94            </intent-filter>
+95        </receiver>
+96    </application>
+97
+98</manifest>

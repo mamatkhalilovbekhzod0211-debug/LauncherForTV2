@@ -1,0 +1,2 @@
+uz.bekhzod0211.launcherfortv.test:style/WhiteBackgroundTheme = 0x7f010001
+uz.bekhzod0211.launcherfortv.test:style/WhiteBackgroundDialogTheme = 0x7f010000
