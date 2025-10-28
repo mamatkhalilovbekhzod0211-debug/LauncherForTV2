@@ -44,13 +44,26 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadInstalledApps(): List<ResolveInfo> {
-        val intent = Intent(Intent.ACTION_MAIN, null)
-        intent.addCategory(Intent.CATEGORY_LAUNCHER)
+        val intent = Intent(Intent.ACTION_MAIN, null).apply {
+            addCategory(Intent.CATEGORY_LAUNCHER)
+        }
+//        intent.addCategory(Intent.CATEGORY_LAUNCHER)
         return packageManager.queryIntentActivities(intent, 0)
     }
 
     private fun isRunningOnTv(): Boolean {
         val uiModeManager = getSystemService(UI_MODE_SERVICE) as UiModeManager
         return uiModeManager.currentModeType == Configuration.UI_MODE_TYPE_TELEVISION
+    }
+
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        // Просто игнорируем — не закрываем лаунчер
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        super.onBackPressed()
+        // ничего
     }
 }
